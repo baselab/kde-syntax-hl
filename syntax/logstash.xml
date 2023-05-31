@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language>
+
+<!--
+    Logstash syntax highlighting definition for KDE.
+    
+    Copyright (c) 2023 devs@baselab.org
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<language name="Logstash" section="Configuration"
+      version="1" kateversion="5.0"
+      extensions="pipeline.conf*;pipe.conf*"
+      mimetype="text/plain"
+      style="ruby" indenter="ruby"
+      author="dev@baselab.org" license="MIT">
+
+    <highlighting>
+
+        <list name="etl-blocks">
+            <item>input</item>
+            <item>filter</item>
+            <item>output</item>
+        </list>
+        <list name="flow-control">
+            <item>if</item>
+            <item>else</item>
+            <item>and</item>
+            <item>or</item>
+        </list>
+        <list name="booleans">
+            <item>true</item>
+            <item>false</item>
+        </list>
+        <list name="inputs">
+            <item>azure_event_hubs</item>
+            <item>beats</item>
+            <item>cloudwatch</item>
+            <item>couchdb_changes</item>
+            <item>dead_letter_queue</item>
+            <item>elastic_agent</item>
+            <item>elastic_serverless_forwarder</item>
+            <item>elasticsearch</item>
+            <item>exec</item>
+            <item>file</item>
+            <item>ganglia</item>
+            <item>gelf</item>
+            <item>generator</item>
+            <item>github</item>
+            <item>google_cloud_storage</item>
+            <item>google_pubsub</item>
+            <item>graphite</item>
+            <item>heartbeat</item>
+            <item>http</item>
+            <item>http_poller</item>
+            <item>imap</item>
+            <item>irc</item>
+            <item>java_generator</item>
+            <item>java_stdin</item>
+            <item>jdbc</item>
+            <item>jms</item>
+            <item>jmx</item>
+            <item>kafka</item>
+            <item>kinesis</item>
+            <item>log4j</item>
+            <item>lumberjack</item>
+            <item>meetup</item>
+            <item>pipe</item>
+            <item>puppet_facter</item>
+            <item>rabbitmq</item>
+            <item>redis</item>
+            <item>relp</item>
+            <item>rss</item>
+            <item>s3</item>
+            <item>s3-sns-sqs</item>
+            <item>salesforce</item>
+            <item>snmp</item>
+            <item>snmptrap</item>
+            <item>sqlite</item>
+            <item>sqs</item>
+            <item>stdin</item>
+            <item>stomp</item>
+            <item>syslog</item>
+            <item>tcp</item>
+            <item>twitter</item>
+            <item>udp</item>
+            <item>unix</item>
+            <item>varnishlog</item>
+            <item>websocket</item>
+            <item>wmi</item>
+            <item>xmpp</item>
+        </list>
+        <list name="filters">
+            <item>age</item>
+            <item>aggregate</item>
+            <item>alter</item>
+            <item>bytes</item>
+            <item>cidr</item>
+            <item>cipher</item>
+            <item>clone</item>
+            <item>csv</item>
+            <item>date</item>
+            <item>de_dot</item>
+            <item>dissect</item>
+            <item>dns</item>
+            <item>drop</item>
+            <item>elapsed</item>
+            <item>elasticsearch</item>
+            <item>environment</item>
+            <item>extractnumbers</item>
+            <item>fingerprint</item>
+            <item>geoip</item>
+            <item>grok</item>
+            <item>http</item>
+            <item>i18n</item>
+            <item>java_uuid</item>
+            <item>jdbc_static</item>
+            <item>jdbc_streaming</item>
+            <item>json</item>
+            <item>json_encode</item>
+            <item>kv</item>
+            <item>memcached</item>
+            <item>metricize</item>
+            <item>metrics</item>
+            <item>mutate</item>
+            <item>prune</item>
+            <item>range</item>
+            <item>ruby</item>
+            <item>sleep</item>
+            <item>split</item>
+            <item>syslog_pri</item>
+            <item>threats_classifier</item>
+            <item>throttle</item>
+            <item>tld</item>
+            <item>translate</item>
+            <item>truncate</item>
+            <item>urldecode</item>
+            <item>useragent</item>
+            <item>uuid</item>
+            <item>wurfl_device_detection</item>
+            <item>xml</item>
+        </list>
+        <list name="outputs">
+            <item>app_search</item>
+            <item>boundary</item>
+            <item>circonus</item>
+            <item>cloudwatch</item>
+            <item>csv</item>
+            <item>datadog</item>
+            <item>datadog_metrics</item>
+            <item>dynatrace</item>
+            <item>elastic_app_search</item>
+            <item>elastic_workplace_search</item>
+            <item>elasticsearch</item>
+            <item>email</item>
+            <item>exec</item>
+            <item>file</item>
+            <item>ganglia</item>
+            <item>gelf</item>
+            <item>google_bigquery</item>
+            <item>google_cloud_storage</item>
+            <item>google_pubsub</item>
+            <item>graphite</item>
+            <item>graphtastic</item>
+            <item>http</item>
+            <item>influxdb</item>
+            <item>irc</item>
+            <item>java_stdout</item>
+            <item>juggernaut</item>
+            <item>kafka</item>
+            <item>librato</item>
+            <item>loggly</item>
+            <item>lumberjack</item>
+            <item>metriccatcher</item>
+            <item>mongodb</item>
+            <item>nagios</item>
+            <item>nagios_nsca</item>
+            <item>opentsdb</item>
+            <item>pagerduty</item>
+            <item>pipe</item>
+            <item>rabbitmq</item>
+            <item>redis</item>
+            <item>redmine</item>
+            <item>riak</item>
+            <item>riemann</item>
+            <item>s3</item>
+            <item>sink</item>
+            <item>sns</item>
+            <item>solr_http</item>
+            <item>sqs</item>
+            <item>statsd</item>
+            <item>stdout</item>
+            <item>stomp</item>
+            <item>syslog</item>
+            <item>tcp</item>
+            <item>timber</item>
+            <item>udp</item>
+            <item>webhdfs</item>
+            <item>websocket</item>
+            <item>workplace_search</item>
+            <item>xmpp</item>
+            <item>zabbix</item>
+        </list>
+
+        <contexts>
+            <context name="Plain" attribute="Plain" lineEndContext="#pop" >
+                <keyword String="etl-blocks" attribute="EtlBlock" context="#stay" />
+                <keyword String="flow-control" attribute="FlowControl" context="#stay" />
+                <keyword String="inputs" attribute="Plugin" context="#stay" />
+                <keyword String="filters" attribute="Plugin" context="#stay" />
+                <keyword String="outputs" attribute="Plugin" context="#stay" />
+                <keyword String="booleans" attribute="Boolean" context="#stay" />
+                <Float attribute="Float" context="#stay" />
+                <Int attribute="Decimal" context="#stay" />
+                <StringDetect String=" => [" attribute="Plain" context="Conf" />
+                <StringDetect String=" code => '" attribute="Plain" context="Ruby" />
+                <!--<StringDetect String=" code => &quot;" attribute="Plain" context="Ruby" />-->
+                <DetectChar char="&quot;" attribute="String" context="StringDQ" />
+                <DetectChar char="'" attribute="String" context="StringSQ" />
+                <DetectChar char="#" attribute="Comment" context="Comment" />
+                <DetectChar char="[" attribute="Plain" context="Field" />
+                <RegExpr String=" \/" attribute="Regexp" context="Regexp" />
+            </context>
+            <context name="StringDQ" attribute="String" lineEndContext="#stay" >
+                <RegExpr String="(?:%{\[|%{|\[)" attribute="Plain" context="Field" />
+                <DetectChar char="&quot;" attribute="String" context="#pop" />
+            </context>
+            <context name="StringSQ" attribute="String" lineEndContext="#stay" >
+                <RegExpr String="(?:%{\[|%{|\[)" attribute="Plain" context="Field" />
+                <DetectChar char="'" attribute="String" context="#pop" />
+            </context>
+            <context name="Comment" attribute="Comment" lineEndContext="#pop">
+                <!--<IncludeRules context="##Comments"/>-->
+            </context>
+            <context name="Field" attribute="Field" lineEndContext="#stay" >
+                <DetectChar char="," attribute="Plain" context="#stay" />
+                <DetectChar char="&quot;" attribute="String" context="StringDQ" />
+                <DetectChar char="'" attribute="String" context="StringSQ" />
+                <RegExpr String="(?:]}|]|})" attribute="Plain" context="#pop" />
+            </context>
+            <context name="Regexp" attribute="Regexp" lineEndContext="#stay" >
+                <RegExpr String="[^\\]/ " attribute="Regexp" context="#pop" />
+            </context>
+            <context name="Conf" attribute="Plain" lineEndContext="#stay" >
+                <DetectChar char="&quot;" attribute="String" context="StringDQ" />
+                <DetectChar char="'" attribute="String" context="StringSQ" />
+                <RegExpr String="]" attribute="Plain" context="#pop" />
+            </context>
+            <context name="Ruby" attribute="Plain" lineEndContext="#stay" >
+                <IncludeRules context="##Ruby"/>
+                <RegExpr String="[^\\]'" attribute="Plain" context="#pop" />
+                <!--<RegExpr String="[^\\]&quot;" attribute="Plain" context="#pop" />-->
+            </context>
+        </contexts>
+
+        <itemDatas>
+            <itemData name="Plain"       defStyleNum="dsNormal" />
+            <itemData name="Boolean"     defStyleNum="dsKeyword" />
+            <itemData name="Field"       defStyleNum="dsAttribute" />
+            <itemData name="String"      defStyleNum="dsString" />
+            <itemData name="Float"       defStyleNum="dsFloat"/>
+            <itemData name="Decimal"     defStyleNum="dsDecVal"/>
+            <itemData name="EtlBlock"    defStyleNum="dsKeyword" />
+            <itemData name="FlowControl" defStyleNum="dsControlFlow" />
+            <itemData name="Plugin"      defStyleNum="dsConstant" />
+            <itemData name="Comment"     defStyleNum="dsComment"/>
+            <itemData name="Regexp"      defStyleNum="dsExtension"/>
+        </itemDatas>
+
+    </highlighting>
+
+    <general>
+        <comments>
+            <comment name="singleLine" start="#" />
+        </comments>
+        <keywords casesensitive="1" weakDeliminator="!?"/>
+    </general>
+
+</language>
