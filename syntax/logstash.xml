@@ -3,7 +3,7 @@
 
 <!--
     Logstash syntax highlighting definition for KDE.
-    
+
     Copyright (c) 2023 devs@baselab.org
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -240,11 +240,11 @@
             </context>
             <context name="StringDQ" attribute="String" lineEndContext="#stay" >
                 <RegExpr String="(?:%{\[|%{|\[)" attribute="Plain" context="Field" />
-                <DetectChar char="&quot;" attribute="String" context="#pop" />
+                <RegExpr String="[^\\]?&quot;" attribute="String" context="#pop" />
             </context>
             <context name="StringSQ" attribute="String" lineEndContext="#stay" >
                 <RegExpr String="(?:%{\[|%{|\[)" attribute="Plain" context="Field" />
-                <DetectChar char="'" attribute="String" context="#pop" />
+                <RegExpr String="[^\\]?'" attribute="String" context="#pop" />
             </context>
             <context name="Comment" attribute="Comment" lineEndContext="#pop">
                 <!--<IncludeRules context="##Comments"/>-->
