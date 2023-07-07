@@ -27,9 +27,9 @@
 
 <language name="Logstash" section="Configuration"
       version="1" kateversion="5.0"
-      extensions="pipeline.conf*;pipe.conf*"
+      extensions="pipe*.conf"
       mimetype="text/plain"
-      style="ruby" indenter="ruby"
+      style="Normal" indenter="Normal"
       author="dev@baselab.org" license="MIT">
 
     <highlighting>
